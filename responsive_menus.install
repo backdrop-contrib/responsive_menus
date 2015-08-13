@@ -1,0 +1,190 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for Responsive Menus.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function responsive_menus_enable() {
+  // Need to clear caches for Context to see our new reaction.
+  cache_clear_all('plugins:context:plugins', 'cache');
+}
+
+function responsive_menus_update_1000() {
+  $config = config('responsive_menus.settings');
+
+  $config->set('responsive_menus', update_variable_get('responsive_menus_css_selectors'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_simple_text'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_media_size'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_css_selectors'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_simple'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_menu_theme'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_ignore_admin'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_simple_absolute'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_disable_mouse_events'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_remove_attributes'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_media_unit'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_container'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_trigger_txt'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_close_txt'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_close_size'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_position'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_media_size'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_show_children'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_expand_children'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_expand_txt'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_contract_txt'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mean_menu_remove_attrs'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_codrops_responsive_multi_css_selectors'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_codrops_responsive_multi_media_size'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_codrops_responsive_multi_ani_in'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_codrops_responsive_multi_ani_out'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_css_selectors'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_trigger_txt'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_sidr_menu_side'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_menu_theme'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_animation_speed'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_media_size'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_sidr_displace'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_renaming'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_on_open'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_sidr_on_close'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_google_nexus_css_selectors'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_google_nexus_use_ecoicons'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_google_nexus_icons'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_google_nexus_icon_fallback'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_css_selectors'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_media_size'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_move_to'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_nav_block'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_nav_block_name'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_push'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_menu_height'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_direction'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_mode'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_collapsed'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_full_collapse'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_swipe'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_decoration'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_toggle'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_toggle'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_decoration'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_nav_block'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_nav_block_name'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_push'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_menu_height'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_direction'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_mode'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_collapsed'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_full_collapse'));
+
+$config->set('responsive_menus', update_variable_get('responsive_menus_mlpm_swipe'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_ignore_admin'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_style'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_no_jquery_update'));
+  $config->set('responsive_menus', update_variable_get('responsive_menus_use_desktopcss'));
+$config->save();
+
+  // Delete variables.
+  update_variable_del('responsive_menus_css_selectors');
+  update_variable_del('responsive_menus_simple_text');
+  update_variable_del('responsive_menus_media_size');
+  update_variable_del('responsive_menus_css_selectors');
+
+  update_variable_del('responsive_menus_style');
+  update_variable_del('responsive_menus_sidr_menu_theme');
+  update_variable_del('responsive_menus_ignore_admin');
+  update_variable_del('responsive_menus_simple_absolute');
+
+  update_variable_del('responsive_menus_disable_mouse_events');
+  update_variable_del('responsive_menus_remove_attributes');
+  update_variable_del('responsive_menus_media_unit');
+  update_variable_del('responsive_menus_mean_menu_container');
+
+  update_variable_del('responsive_menus_mean_menu_trigger_txt');
+  update_variable_del('responsive_menus_mean_menu_close_txt');
+  update_variable_del('responsive_menus_mean_menu_close_size');
+  update_variable_del('responsive_menus_mean_menu_position');
+
+  update_variable_del('responsive_menus_mean_menu_media_size');
+  update_variable_del('responsive_menus_mean_menu_show_children');
+  update_variable_del('responsive_menus_mean_menu_expand_children');
+  update_variable_del('responsive_menus_mean_menu_expand_txt');
+
+  update_variable_del('responsive_menus_mean_menu_contract_txt');
+  update_variable_del('responsive_menus_mean_menu_remove_attrs');
+  update_variable_del('responsive_menus_codrops_responsive_multi_css_selectors');
+  update_variable_del('responsive_menus_codrops_responsive_multi_media_size');
+
+  update_variable_del('responsive_menus_codrops_responsive_multi_ani_in');
+  update_variable_del('responsive_menus_codrops_responsive_multi_ani_out');
+  update_variable_del('responsive_menus_sidr_css_selectors');
+  update_variable_del('responsive_menus_sidr_trigger_txt');
+
+  update_variable_del('responsive_menus_sidr_menu_side');
+  update_variable_del('responsive_menus_sidr_menu_theme');
+  update_variable_del('responsive_menus_sidr_animation_speed');
+  update_variable_del('responsive_menus_sidr_media_size');
+
+  update_variable_del('responsive_menus_sidr_displace');
+  update_variable_del('responsive_menus_sidr_renaming');
+  update_variable_del('responsive_menus_sidr_on_open');
+  update_variable_del('responsive_menus_sidr_on_close');
+
+  update_variable_del('responsive_menus_google_nexus_css_selectors');
+  update_variable_del('responsive_menus_google_nexus_use_ecoicons');
+  update_variable_del('responsive_menus_google_nexus_icons');
+  update_variable_del('responsive_menus_google_nexus_icon_fallback');
+
+  update_variable_del('responsive_menus_mlpm_css_selectors');
+  update_variable_del('responsive_menus_mlpm_media_size');
+  update_variable_del('responsive_menus_mlpm_move_to');
+  update_variable_del('responsive_menus_mlpm_nav_block');
+
+  update_variable_del('responsive_menus_mlpm_nav_block_name');
+  update_variable_del('responsive_menus_mlpm_push');
+  update_variable_del('responsive_menus_mlpm_menu_height');
+  update_variable_del('responsive_menus_mlpm_direction');
+
+  update_variable_del('responsive_menus_mlpm_mode');
+  update_variable_del('responsive_menus_mlpm_collapsed');
+  update_variable_del('responsive_menus_mlpm_full_collapse');
+  update_variable_del('responsive_menus_mlpm_swipe');
+
+  update_variable_del('responsive_menus_mlpm_decoration');
+  update_variable_del('responsive_menus_mlpm_toggle');
+
+  update_variable_del('responsive_menus_mlpm_nav_block');
+  update_variable_del('responsive_menus_mlpm_nav_block_name');
+  update_variable_del('responsive_menus_mlpm_push');
+  update_variable_del('responsive_menus_mlpm_menu_height');
+
+  update_variable_del('responsive_menus_mlpm_direction');
+  update_variable_del('responsive_menus_mlpm_mode');
+  update_variable_del('responsive_menus_mlpm_collapsed');
+  update_variable_del('responsive_menus_mlpm_full_collapse');
+
+  update_variable_del('responsive_menus_mlpm_swipe');
+  update_variable_del('responsive_menus_ignore_admin');
+  update_variable_del('responsive_menus_style');
+  update_variable_del('responsive_menus_no_jquery_update');
+  update_variable_del('responsive_menus_use_desktopcss');
+}

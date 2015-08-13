@@ -1,0 +1,71 @@
+@media only screen and (min-width:769px) {
+
+body:not(.front) .block-system-main-menu {
+  top: 20px;
+}
+
+.block-system-main-menu ul.menu {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 998;
+}
+.block-system-main-menu ul.menu li {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+  z-index: 998;
+}
+.block-system-main-menu ul.menu li:hover {
+  background: #fff;
+  z-index: 998;
+}
+.block-system-main-menu ul.menu li ul {
+  padding: 0;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.9s;
+  -moz-transition: opacity 0.9s;
+  -ms-transition: opacity 0.9s;
+  -o-transition: opacity 0.9s;
+  -transition: opacity 0.9s;
+  z-index: 998;
+  border: 1px solid #ccc;
+  border-top: 0px solid;
+  border-right: 0px solid;
+}
+.block-system-main-menu ul.menu li ul li {
+  background: #fff;
+  display: block;
+  z-index: 998;
+}
+.block-system-main-menu ul.menu li ul li:hover { background: #a6a7a2; }
+.block-system-main-menu ul.menu li:hover ul, .block-system-main-menu ul.menu ul:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 998;
+}
+
+}

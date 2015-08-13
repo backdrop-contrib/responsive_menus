@@ -1,0 +1,87 @@
+{
+    "_config_name": "responsive_menus.settings",
+
+"responsive_menus_css_selectors": "ul.menu",
+"responsive_menus_simple_text": "☰ Menu",
+"responsive_menus_media_size": 768,
+"responsive_menus_mean_menu_css_selectors": ".block-system-main-menu",
+
+"responsive_menus_style": "responsive_menus_simple",
+"responsive_menus_sidr_menu_theme": "dark",
+"responsive_menus_ignore_admin": [],
+"responsive_menus_simple_absolute": [],
+
+"responsive_menus_disable_mouse_events": [],
+"responsive_menus_remove_attributes": [],
+"responsive_menus_media_unit": "px",
+"responsive_menus_mean_menu_container": "body",
+
+"responsive_menus_mean_menu_trigger_txt": "<span /><span /><span />",
+"responsive_menus_mean_menu_close_txt": "X",
+"responsive_menus_mean_menu_close_size": "18px",
+"responsive_menus_mean_menu_position": "right",
+
+"responsive_menus_mean_menu_media_size": 480,
+"responsive_menus_mean_menu_show_children": 1,
+"responsive_menus_mean_menu_expand_children": 1,
+"responsive_menus_mean_menu_expand_txt": "+",
+
+"responsive_menus_mean_menu_contract_txt": "-",
+"responsive_menus_mean_menu_remove_attrs": 1,
+"responsive_menus_codrops_responsive_multi_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_codrops_responsive_multi_media_size": 768,
+
+"responsive_menus_codrops_responsive_multi_ani_in": "dl-animate-in-1",
+"responsive_menus_codrops_responsive_multi_ani_out": "dl-animate-out-1",
+"responsive_menus_sidr_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_sidr_trigger_txt": "Menu",
+
+"responsive_menus_sidr_menu_side": [],
+"responsive_menus_sidr_menu_theme": "dark",
+"responsive_menus_sidr_animation_speed": 200,
+"responsive_menus_sidr_media_size": 768,
+
+"responsive_menus_sidr_displace": 1,
+"responsive_menus_sidr_renaming": 1,
+"responsive_menus_sidr_on_open": "",
+"responsive_menus_sidr_on_close": "",
+
+"responsive_menus_google_nexus_css_selectors": ".block-content > ul.menu",
+"responsive_menus_google_nexus_use_ecoicons": 1,
+"responsive_menus_google_nexus_icons": "\ue005\n\ue006",
+"responsive_menus_google_nexus_icon_fallback": "&#57347;",
+
+"responsive_menus_mlpm_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_mlpm_media_size": 768,
+"responsive_menus_mlpm_move_to": ".l-container",
+"responsive_menus_mlpm_nav_block": 1,
+
+"responsive_menus_mlpm_nav_block_name": "mlpm-menu",
+"responsive_menus_mlpm_push": "main.l-content",
+"responsive_menus_mlpm_menu_height": "100%",
+"responsive_menus_mlpm_direction": "ltr",
+
+"responsive_menus_mlpm_mode": "overlap",
+"responsive_menus_mlpm_collapsed": 1,
+"responsive_menus_mlpm_full_collapse": 0,
+"responsive_menus_mlpm_swipe": "both",
+
+"responsive_menus_mlpm_decoration": [],
+"responsive_menus_mlpm_toggle": [],
+"responsive_menus_mlpm_nav_block": 1,
+"responsive_menus_mlpm_nav_block_name": "mlpm-menu",
+
+"responsive_menus_mlpm_push": "#page",
+"responsive_menus_mlpm_menu_height": "100%",
+"responsive_menus_mlpm_direction": "ltr",
+"responsive_menus_mlpm_mode": "overlap",
+
+"responsive_menus_mlpm_collapsed": 1,
+"responsive_menus_mlpm_full_collapse": 0,
+"responsive_menus_mlpm_swipe": "both",
+"responsive_menus_ignore_admin": [],
+
+"responsive_menus_use_desktopcss": [],
+"responsive_menus_style": "responsive_menus_simple",
+"responsive_menus_no_jquery_update": []
+}
