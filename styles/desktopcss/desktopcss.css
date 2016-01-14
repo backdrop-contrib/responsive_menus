@@ -1,10 +1,10 @@
 @media only screen and (min-width:769px) {
 
-body:not(.front) .block-system-main-menu {
+body:not(.front) .l-header .block-system-main-menu {
   top: 20px;
 }
 
-.block-system-main-menu ul.menu {
+.l-header .block-system-main-menu ul.menu {
   text-align: left;
   display: inline;
   margin: 0;
@@ -15,7 +15,7 @@ body:not(.front) .block-system-main-menu {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   z-index: 998;
 }
-.block-system-main-menu ul.menu li {
+.l-header .block-system-main-menu ul.menu li {
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -29,11 +29,11 @@ body:not(.front) .block-system-main-menu {
   transition: all 0.9s;
   z-index: 998;
 }
-.block-system-main-menu ul.menu li:hover {
+.l-header .block-system-main-menu ul.menu li:hover {
   background: #fff;
   z-index: 998;
 }
-.block-system-main-menu ul.menu li ul {
+.l-header .block-system-main-menu ul.menu li ul {
   padding: 0;
   position: absolute;
   top: 45px;
@@ -55,13 +55,13 @@ body:not(.front) .block-system-main-menu {
   border-top: 0px solid;
   border-right: 0px solid;
 }
-.block-system-main-menu ul.menu li ul li {
+.l-header .block-system-main-menu ul.menu li ul li {
   background: #fff;
   display: block;
   z-index: 998;
 }
-.block-system-main-menu ul.menu li ul li:hover { background: #a6a7a2; }
-.block-system-main-menu ul.menu li:hover ul, .block-system-main-menu ul.menu ul:hover {
+.l-header .block-system-main-menu ul.menu li ul li:hover { background: #a6a7a2; }
+.l-header .block-system-main-menu ul.menu li:hover ul, .block-system-main-menu ul.menu ul:hover {
   display: block;
   opacity: 1;
   visibility: visible;

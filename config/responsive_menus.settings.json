@@ -4,7 +4,7 @@
 "responsive_menus_css_selectors": "ul.menu",
 "responsive_menus_simple_text": "☰ Menu",
 "responsive_menus_media_size": 768,
-"responsive_menus_mean_menu_css_selectors": ".block-system-main-menu",
+"responsive_menus_mean_menu_css_selectors": ".l-header .block-system-main-menu",
 
 "responsive_menus_style": "responsive_menus_simple",
 "responsive_menus_sidr_menu_theme": "dark",
@@ -28,12 +28,12 @@
 
 "responsive_menus_mean_menu_contract_txt": "-",
 "responsive_menus_mean_menu_remove_attrs": 1,
-"responsive_menus_codrops_responsive_multi_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_codrops_responsive_multi_css_selectors": ".l-header .block-system-main-menu > .block-content",
 "responsive_menus_codrops_responsive_multi_media_size": 768,
 
 "responsive_menus_codrops_responsive_multi_ani_in": "dl-animate-in-1",
 "responsive_menus_codrops_responsive_multi_ani_out": "dl-animate-out-1",
-"responsive_menus_sidr_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_sidr_css_selectors": ".l-header .block-system-main-menu > .block-content",
 "responsive_menus_sidr_trigger_txt": "Menu",
 
 "responsive_menus_sidr_menu_side": [],
@@ -46,12 +46,12 @@
 "responsive_menus_sidr_on_open": "",
 "responsive_menus_sidr_on_close": "",
 
-"responsive_menus_google_nexus_css_selectors": ".block-content > ul.menu",
+"responsive_menus_google_nexus_css_selectors": ".l-header .block-content > ul.menu",
 "responsive_menus_google_nexus_use_ecoicons": 1,
 "responsive_menus_google_nexus_icons": "\ue005\n\ue006",
 "responsive_menus_google_nexus_icon_fallback": "&#57347;",
 
-"responsive_menus_mlpm_css_selectors": ".block-system-main-menu > .block-content",
+"responsive_menus_mlpm_css_selectors": ".l-header .block-system-main-menu > .block-content",
 "responsive_menus_mlpm_media_size": 768,
 "responsive_menus_mlpm_move_to": ".l-container",
 "responsive_menus_mlpm_nav_block": 1,

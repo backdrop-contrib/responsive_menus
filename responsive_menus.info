@@ -2,6 +2,6 @@ name = Responsive Menus
 description = Responsify any menu using CSS Selectors.
 package = User interface
 backdrop = 1.x
-version = 1.x-1.1
+version = 1.x-1.2
 type = module
 configure = admin/config/user-interface/responsive_menus

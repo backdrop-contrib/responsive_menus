@@ -22,8 +22,8 @@ CONTENTS OF THIS FILE
 TESTED
 -----
 
-Working in Backdrop 1.1
-Mainly tested to fit Seven and contrib themes rather than Bartik theme.
+Working in Backdrop 1.2
+Mainly tested to fit Seven and contrib themes.  Bartik theme is going through changes for the 1.3 and 1.4 versions of Backdrop and thus you may have to write CSS to fit with this module if you are using Bartik.
 
 KNOWN ISSUES
 ---------------------
